@@ -1,0 +1,23 @@
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\bin\Release\CW File Viewer 5.exe.config
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\bin\Release\CW File Viewer 5.exe
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\bin\Release\CW File Viewer 5.pdb
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\bin\Release\AxInterop.WMPLib.dll
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW File Viewer 5.csprojResolveAssemblyReference.cache
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmAddWord.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmAll.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmCut.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmFullscr.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmHistory.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmInfo.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmMain.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmTool.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.Properties.Resources.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW File Viewer 5.csproj.GenerateResource.Cache
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW File Viewer 5.exe
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW File Viewer 5.pdb
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmBegin.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmDic.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmSearch.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmTag.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmTagPageMan.resources
+D:\360云盘\Visual Studio 2012\CW File Viewer\CW File Viewer 5\CW File Viewer 5\obj\Release\CW_File_Viewer_5.FrmTagProper.resources

@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6DB1BC6-EF02-4E0C-9C88-969BE2826D02}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CW_File_Viewer_5</RootNamespace>
+    <AssemblyName>CW File Viewer 5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AxInterop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.8.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL" />
+    <Reference Include="Interop.WMPLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.WMPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.Word, Version=8.3.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Debug\Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmRename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRename.Designer.cs">
+      <DependentUpon>FrmRename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTextWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTextWork.Designer.cs">
+      <DependentUpon>FrmTextWork.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagPageMan_CopyPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagPageMan_CopyPage.Designer.cs">
+      <DependentUpon>FrmTagPageMan_CopyPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmText.Designer.cs">
+      <DependentUpon>FrmText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFileNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFileNote.Designer.cs">
+      <DependentUpon>FrmFileNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBegin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBegin.Designer.cs">
+      <DependentUpon>FrmBegin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSearch.Designer.cs">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagPageMan_Del.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagPageMan_Del.Designer.cs">
+      <DependentUpon>FrmTagPageMan_Del.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTag.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTag.Designer.cs">
+      <DependentUpon>FrmTag.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddWord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddWord.Designer.cs">
+      <DependentUpon>FrmAddWord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAll.Designer.cs">
+      <DependentUpon>FrmAll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCut.Designer.cs">
+      <DependentUpon>FrmCut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDic.Designer.cs">
+      <DependentUpon>FrmDic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFullscr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFullscr.Designer.cs">
+      <DependentUpon>FrmFullscr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHistory.Designer.cs">
+      <DependentUpon>FrmHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInfo.Designer.cs">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPpic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPpic.Designer.cs">
+      <DependentUpon>FrmPpic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPtxt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPtxt.Designer.cs">
+      <DependentUpon>FrmPtxt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagCopy.Designer.cs">
+      <DependentUpon>FrmTagCopy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagPageMan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagPageMan.Designer.cs">
+      <DependentUpon>FrmTagPageMan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagProper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagProper.Designer.cs">
+      <DependentUpon>FrmTagProper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTagSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTagSystem.Designer.cs">
+      <DependentUpon>FrmTagSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTool.Designer.cs">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gib.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmRename.resx">
+      <DependentUpon>FrmRename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTextWork.resx">
+      <DependentUpon>FrmTextWork.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagPageMan_CopyPage.resx">
+      <DependentUpon>FrmTagPageMan_CopyPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmText.resx">
+      <DependentUpon>FrmText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFileNote.resx">
+      <DependentUpon>FrmFileNote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddWord.resx">
+      <DependentUpon>FrmAddWord.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAll.resx">
+      <DependentUpon>FrmAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBegin.resx">
+      <DependentUpon>FrmBegin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCut.resx">
+      <DependentUpon>FrmCut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDic.resx">
+      <DependentUpon>FrmDic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFullscr.resx">
+      <DependentUpon>FrmFullscr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHistory.resx">
+      <DependentUpon>FrmHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInfo.resx">
+      <DependentUpon>FrmInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPtxt.resx">
+      <DependentUpon>FrmPtxt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSearch.resx">
+      <DependentUpon>FrmSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagPageMan_Del.resx">
+      <DependentUpon>FrmTagPageMan_Del.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTag.resx">
+      <DependentUpon>FrmTag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagCopy.resx">
+      <DependentUpon>FrmTagCopy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagPageMan.resx">
+      <DependentUpon>FrmTagPageMan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagProper.resx">
+      <DependentUpon>FrmTagProper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTagSystem.resx">
+      <DependentUpon>FrmTagSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTool.resx">
+      <DependentUpon>FrmTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\alltoone.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\chengecode.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\killchinese.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\killenglish.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\killenterc.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\makesamefile.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\recover.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\state23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\crumb\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\crumb\dvdrom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\crumb\folderp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\crumb\hdd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\error.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\folder.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\folderemp.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\MP3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\png.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="media\bmp\text.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icon.ico" />
+    <None Include="media\bmp\cfvnote.ico" />
+    <None Include="media\bmp\rtf.ico" />
+    <None Include="media\bmp\delchar.bmp" />
+    <None Include="media\bmp\rightmenu\share.png" />
+    <None Include="media\bmp\rightmenu\see.png" />
+    <None Include="media\ico\errorflag.png" />
+    <None Include="media\bmp\rightmenu\date.png" />
+    <None Include="media\bmp\ordertags.bmp" />
+    <None Include="media\bmp\rightmenu\tocollection.png" />
+    <None Include="media\bmp\rightmenu\info.png" />
+    <None Include="media\bmp\rightmenu\changecolname.png" />
+    <None Include="media\bmp\rightmenu\delete.png" />
+    <None Include="media\bmp\errorp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Shell32">
+      <Guid>{50A7E9B0-70EF-11D1-B75A-00A0C90564FE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties Reactor_Enabled="0" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

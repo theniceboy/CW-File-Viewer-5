@@ -2257,7 +2257,12 @@ namespace CW_File_Viewer_5
         {
             if (e.Control && e.KeyCode == Keys.A)
                 this.lrcv.SelectAll();
-            if (e.Alt && e.KeyCode == Keys.F)
+            else if (e.Control && e.KeyCode == Keys.F)
+            {
+                FrmFind frm = new FrmFind();
+                frm.Show(this);
+            }
+            else if (e.Alt && e.KeyCode == Keys.F)
             {
                 switch (Gib.nowtab)
                 {
@@ -3523,6 +3528,24 @@ namespace CW_File_Viewer_5
         {
             Gib.crossfile1 = Gib.rbfile;
             FrmRename frm = new FrmRename();
+            frm.ShowDialog(this);
+        }
+
+        private void lrcv_SelectionChanged(object sender, EventArgs e)
+        {
+            ++Gib.lrcvSelectedState;
+        }
+
+        private void 查找ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFind frm = new FrmFind();
+            frm.Show(this);
+        }
+
+        private void 文本操作ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Gib.ftextinter = false;
+            FrmText frm = new FrmText();
             frm.ShowDialog(this);
         }
     }

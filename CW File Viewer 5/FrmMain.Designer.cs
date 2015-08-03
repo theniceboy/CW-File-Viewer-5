@@ -157,6 +157,10 @@ namespace CW_File_Viewer_5
             this.controlContainerItem24 = new DevComponents.DotNetBar.ControlContainerItem();
             this.applicationButton1 = new DevComponents.DotNetBar.ApplicationButton();
             this.superTabControl1 = new DevComponents.DotNetBar.SuperTabControl();
+            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
+            this.reflectionLabel2 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
+            this.labelX1 = new DevComponents.DotNetBar.LabelX();
+            this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel2 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.textl1 = new DevComponents.DotNetBar.LabelX();
             this.autost = new DevComponents.Editors.IntegerInput();
@@ -166,10 +170,6 @@ namespace CW_File_Viewer_5
             this.recoveryatfirst = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.savenohint = new DevComponents.DotNetBar.Controls.CheckBoxX();
             this.常规 = new DevComponents.DotNetBar.SuperTabItem();
-            this.superTabControlPanel1 = new DevComponents.DotNetBar.SuperTabControlPanel();
-            this.reflectionLabel2 = new DevComponents.DotNetBar.Controls.ReflectionLabel();
-            this.labelX1 = new DevComponents.DotNetBar.LabelX();
-            this.superTabItem1 = new DevComponents.DotNetBar.SuperTabItem();
             this.superTabControlPanel4 = new DevComponents.DotNetBar.SuperTabControlPanel();
             this.aboutcfv = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
@@ -295,6 +295,8 @@ namespace CW_File_Viewer_5
             this.autosave = new System.Windows.Forms.Timer(this.components);
             this.backt = new System.Windows.Forms.Timer(this.components);
             this.lrcvfocuser = new System.Windows.Forms.Timer(this.components);
+            this.查找ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.文本操作ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rightmenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.wtsize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tabv)).BeginInit();
@@ -318,9 +320,9 @@ namespace CW_File_Viewer_5
             this.ribbonBar4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).BeginInit();
             this.superTabControl1.SuspendLayout();
+            this.superTabControlPanel1.SuspendLayout();
             this.superTabControlPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.autost)).BeginInit();
-            this.superTabControlPanel1.SuspendLayout();
             this.panelfile.SuspendLayout();
             this.metroStatusBar1.SuspendLayout();
             this.panelplayer.SuspendLayout();
@@ -720,7 +722,7 @@ namespace CW_File_Viewer_5
             // 
             // tabControlPanel1
             // 
-            this.tabControlPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2013;
+            this.tabControlPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.tabControlPanel1.Controls.Add(this.filev1);
             this.tabControlPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1762,10 +1764,10 @@ namespace CW_File_Viewer_5
             this.ribbonPanel2.Controls.Add(this.ribbonBar5);
             this.ribbonPanel2.Controls.Add(this.ribbonBar4);
             this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 0);
+            this.ribbonPanel2.Location = new System.Drawing.Point(0, 57);
             this.ribbonPanel2.Name = "ribbonPanel2";
             this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 2);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1374, 130);
+            this.ribbonPanel2.Size = new System.Drawing.Size(1374, 73);
             // 
             // 
             // 
@@ -1800,7 +1802,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem52});
             this.ribbonBar11.Location = new System.Drawing.Point(988, 0);
             this.ribbonBar11.Name = "ribbonBar11";
-            this.ribbonBar11.Size = new System.Drawing.Size(140, 128);
+            this.ribbonBar11.Size = new System.Drawing.Size(140, 71);
             this.ribbonBar11.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar11.TabIndex = 6;
             this.ribbonBar11.Text = "文本操作";
@@ -1854,7 +1856,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem51});
             this.ribbonBar10.Location = new System.Drawing.Point(829, 0);
             this.ribbonBar10.Name = "ribbonBar10";
-            this.ribbonBar10.Size = new System.Drawing.Size(159, 128);
+            this.ribbonBar10.Size = new System.Drawing.Size(159, 71);
             this.ribbonBar10.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar10.TabIndex = 5;
             this.ribbonBar10.Text = "整理";
@@ -1908,7 +1910,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem50});
             this.ribbonBar9.Location = new System.Drawing.Point(697, 0);
             this.ribbonBar9.Name = "ribbonBar9";
-            this.ribbonBar9.Size = new System.Drawing.Size(132, 128);
+            this.ribbonBar9.Size = new System.Drawing.Size(132, 71);
             this.ribbonBar9.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar9.TabIndex = 4;
             this.ribbonBar9.Text = "备份";
@@ -1963,7 +1965,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem48});
             this.ribbonBar8.Location = new System.Drawing.Point(541, 0);
             this.ribbonBar8.Name = "ribbonBar8";
-            this.ribbonBar8.Size = new System.Drawing.Size(156, 128);
+            this.ribbonBar8.Size = new System.Drawing.Size(156, 71);
             this.ribbonBar8.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar8.TabIndex = 3;
             this.ribbonBar8.Text = "保存";
@@ -2020,7 +2022,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem47});
             this.ribbonBar7.Location = new System.Drawing.Point(270, 0);
             this.ribbonBar7.Name = "ribbonBar7";
-            this.ribbonBar7.Size = new System.Drawing.Size(271, 128);
+            this.ribbonBar7.Size = new System.Drawing.Size(271, 71);
             this.ribbonBar7.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar7.TabIndex = 2;
             this.ribbonBar7.Text = "标签工具";
@@ -2099,7 +2101,7 @@ namespace CW_File_Viewer_5
             this.controlContainerItem7});
             this.ribbonBar5.Location = new System.Drawing.Point(107, 0);
             this.ribbonBar5.Name = "ribbonBar5";
-            this.ribbonBar5.Size = new System.Drawing.Size(163, 128);
+            this.ribbonBar5.Size = new System.Drawing.Size(163, 71);
             this.ribbonBar5.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar5.TabIndex = 1;
             this.ribbonBar5.Text = "文件搜索工具";
@@ -2157,7 +2159,7 @@ namespace CW_File_Viewer_5
             this.itemContainer7});
             this.ribbonBar4.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar4.Name = "ribbonBar4";
-            this.ribbonBar4.Size = new System.Drawing.Size(104, 128);
+            this.ribbonBar4.Size = new System.Drawing.Size(104, 71);
             this.ribbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
             this.ribbonBar4.TabIndex = 0;
             this.ribbonBar4.Text = "自定义词典工具";
@@ -2180,7 +2182,7 @@ namespace CW_File_Viewer_5
             this.usedic.FocusCuesEnabled = false;
             this.usedic.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.usedic.ForeColor = System.Drawing.Color.Black;
-            this.usedic.Location = new System.Drawing.Point(4, 4);
+            this.usedic.Location = new System.Drawing.Point(4, 3);
             this.usedic.Name = "usedic";
             this.usedic.Size = new System.Drawing.Size(94, 20);
             this.usedic.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
@@ -2195,7 +2197,7 @@ namespace CW_File_Viewer_5
             this.add.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.add.FocusCuesEnabled = false;
             this.add.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.add.Location = new System.Drawing.Point(4, 27);
+            this.add.Location = new System.Drawing.Point(4, 26);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(94, 20);
             this.add.Symbol = "";
@@ -2296,6 +2298,57 @@ namespace CW_File_Viewer_5
             this.superTabItem1});
             this.superTabControl1.TabStyle = DevComponents.DotNetBar.eSuperTabStyle.Office2010BackstageBlue;
             this.superTabControl1.TabVerticalSpacing = 8;
+            // 
+            // superTabControlPanel1
+            // 
+            this.superTabControlPanel1.Controls.Add(this.reflectionLabel2);
+            this.superTabControlPanel1.Controls.Add(this.labelX1);
+            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.superTabControlPanel1.Location = new System.Drawing.Point(109, 28);
+            this.superTabControlPanel1.Name = "superTabControlPanel1";
+            this.superTabControlPanel1.Size = new System.Drawing.Size(1273, 738);
+            this.superTabControlPanel1.TabIndex = 0;
+            this.superTabControlPanel1.TabItem = this.superTabItem1;
+            // 
+            // reflectionLabel2
+            // 
+            this.reflectionLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.reflectionLabel2.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.reflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.reflectionLabel2.Font = new System.Drawing.Font("YouYuan", 30F);
+            this.reflectionLabel2.ForeColor = System.Drawing.Color.Black;
+            this.reflectionLabel2.Location = new System.Drawing.Point(885, 585);
+            this.reflectionLabel2.Name = "reflectionLabel2";
+            this.reflectionLabel2.Size = new System.Drawing.Size(251, 205);
+            this.reflectionLabel2.TabIndex = 174;
+            this.reflectionLabel2.Text = "陈为制作";
+            // 
+            // labelX1
+            // 
+            this.labelX1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            // 
+            // 
+            // 
+            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX1.Font = new System.Drawing.Font("Curlz MT", 90F);
+            this.labelX1.ForeColor = System.Drawing.Color.Black;
+            this.labelX1.Location = new System.Drawing.Point(13, 16);
+            this.labelX1.Name = "labelX1";
+            this.labelX1.Size = new System.Drawing.Size(1079, 718);
+            this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
+            this.labelX1.TabIndex = 175;
+            this.labelX1.Text = "CW File Viewer\r\n        5.6.6";
+            // 
+            // superTabItem1
+            // 
+            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
+            this.superTabItem1.GlobalItem = false;
+            this.superTabItem1.Name = "superTabItem1";
+            this.superTabItem1.Text = "关于";
             // 
             // superTabControlPanel2
             // 
@@ -2459,57 +2512,6 @@ namespace CW_File_Viewer_5
             this.常规.GlobalItem = false;
             this.常规.Name = "常规";
             this.常规.Text = "常规";
-            // 
-            // superTabControlPanel1
-            // 
-            this.superTabControlPanel1.Controls.Add(this.reflectionLabel2);
-            this.superTabControlPanel1.Controls.Add(this.labelX1);
-            this.superTabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.superTabControlPanel1.Location = new System.Drawing.Point(109, 28);
-            this.superTabControlPanel1.Name = "superTabControlPanel1";
-            this.superTabControlPanel1.Size = new System.Drawing.Size(1273, 738);
-            this.superTabControlPanel1.TabIndex = 0;
-            this.superTabControlPanel1.TabItem = this.superTabItem1;
-            // 
-            // reflectionLabel2
-            // 
-            this.reflectionLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.reflectionLabel2.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.reflectionLabel2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.reflectionLabel2.Font = new System.Drawing.Font("YouYuan", 30F);
-            this.reflectionLabel2.ForeColor = System.Drawing.Color.Black;
-            this.reflectionLabel2.Location = new System.Drawing.Point(885, 585);
-            this.reflectionLabel2.Name = "reflectionLabel2";
-            this.reflectionLabel2.Size = new System.Drawing.Size(251, 205);
-            this.reflectionLabel2.TabIndex = 174;
-            this.reflectionLabel2.Text = "陈为制作";
-            // 
-            // labelX1
-            // 
-            this.labelX1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            // 
-            // 
-            // 
-            this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX1.Font = new System.Drawing.Font("Curlz MT", 90F);
-            this.labelX1.ForeColor = System.Drawing.Color.Black;
-            this.labelX1.Location = new System.Drawing.Point(13, 16);
-            this.labelX1.Name = "labelX1";
-            this.labelX1.Size = new System.Drawing.Size(1079, 718);
-            this.labelX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.OfficeMobile2014;
-            this.labelX1.TabIndex = 175;
-            this.labelX1.Text = "CW File Viewer\r\n        5.6.5";
-            // 
-            // superTabItem1
-            // 
-            this.superTabItem1.AttachedControl = this.superTabControlPanel1;
-            this.superTabItem1.GlobalItem = false;
-            this.superTabItem1.Name = "superTabItem1";
-            this.superTabItem1.Text = "关于";
             // 
             // superTabControlPanel4
             // 
@@ -3006,7 +3008,6 @@ namespace CW_File_Viewer_5
             this.newfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.newfile.BackColor = System.Drawing.Color.White;
             this.btip.SetBalloonCaption(this.newfile, "新建文件名为左框中字符串的文件");
-            this.btip.SetBalloonText(this.newfile, null);
             this.newfile.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.newfile.FocusCuesEnabled = false;
             this.newfile.Font = new System.Drawing.Font("Segoe UI", 8.5F);
@@ -3380,6 +3381,7 @@ namespace CW_File_Viewer_5
             this.lrcv.Size = new System.Drawing.Size(946, 520);
             this.lrcv.TabIndex = 158;
             this.lrcv.Text = "";
+            this.lrcv.SelectionChanged += new System.EventHandler(this.lrcv_SelectionChanged);
             this.lrcv.TextChanged += new System.EventHandler(this.lrcv_TextChanged);
             this.lrcv.KeyDown += new System.Windows.Forms.KeyEventHandler(this.lrcv_KeyDown);
             this.lrcv.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lrcv_MouseUp);
@@ -3389,9 +3391,11 @@ namespace CW_File_Viewer_5
             this.infilemenu.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infilemenu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.infilemenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addate});
+            this.addate,
+            this.查找ToolStripMenuItem,
+            this.文本操作ToolStripMenuItem});
             this.infilemenu.Name = "infilemenu";
-            this.infilemenu.Size = new System.Drawing.Size(149, 30);
+            this.infilemenu.Size = new System.Drawing.Size(149, 82);
             // 
             // addate
             // 
@@ -3950,6 +3954,20 @@ namespace CW_File_Viewer_5
             // 
             this.lrcvfocuser.Tick += new System.EventHandler(this.lrcvfocuser_Tick);
             // 
+            // 查找ToolStripMenuItem
+            // 
+            this.查找ToolStripMenuItem.Name = "查找ToolStripMenuItem";
+            this.查找ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.查找ToolStripMenuItem.Text = "查找";
+            this.查找ToolStripMenuItem.Click += new System.EventHandler(this.查找ToolStripMenuItem_Click);
+            // 
+            // 文本操作ToolStripMenuItem
+            // 
+            this.文本操作ToolStripMenuItem.Name = "文本操作ToolStripMenuItem";
+            this.文本操作ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.文本操作ToolStripMenuItem.Text = "文本操作";
+            this.文本操作ToolStripMenuItem.Click += new System.EventHandler(this.文本操作ToolStripMenuItem_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -3983,7 +4001,7 @@ namespace CW_File_Viewer_5
             this.IsMdiContainer = true;
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CW File Viewer 5.6.5";
+            this.Text = "CW File Viewer 5.6.6";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FrmMain_FormClosing);
             this.Load += new System.EventHandler(this.FrmMain_Load);
@@ -4012,10 +4030,10 @@ namespace CW_File_Viewer_5
             this.ribbonBar4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.superTabControl1)).EndInit();
             this.superTabControl1.ResumeLayout(false);
+            this.superTabControlPanel1.ResumeLayout(false);
             this.superTabControlPanel2.ResumeLayout(false);
             this.superTabControlPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.autost)).EndInit();
-            this.superTabControlPanel1.ResumeLayout(false);
             this.panelfile.ResumeLayout(false);
             this.metroStatusBar1.ResumeLayout(false);
             this.metroStatusBar1.PerformLayout();
@@ -4304,6 +4322,8 @@ namespace CW_File_Viewer_5
         private DevComponents.DotNetBar.ControlContainerItem controlContainerItem31;
         private DevComponents.DotNetBar.ControlContainerItem controlContainerItem49;
         private System.Windows.Forms.ToolStripMenuItem rbrename;
+        private System.Windows.Forms.ToolStripMenuItem 查找ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 文本操作ToolStripMenuItem;
 
     }
 }

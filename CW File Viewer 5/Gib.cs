@@ -97,6 +97,9 @@ namespace CW_File_Viewer_5
         public static string ftextinterstr;
 
         public static bool ftaglocked = false, TextFormatFormOpened;
+
+        public static string findstr = "";
+        public static int lrcvSelectedState;
     }
 }
 

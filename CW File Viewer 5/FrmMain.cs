@@ -2670,8 +2670,9 @@ namespace CW_File_Viewer_5
             {
                 if (Gib.txtpath != "")
                 {
+                    Gib.dochoosetag = false;
                     FrmTag frm = new FrmTag();
-                    frm.Show();
+                    frm.Show(this);
                 }
                 else
                     MessageBoxEx.Show("未选择文件！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Error);

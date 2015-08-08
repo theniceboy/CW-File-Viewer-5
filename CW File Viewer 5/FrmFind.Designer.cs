@@ -51,7 +51,7 @@ namespace CW_File_Viewer_5
             this.tbText.Multiline = true;
             this.tbText.Name = "tbText";
             this.tbText.PreventEnterBeep = true;
-            this.tbText.Size = new System.Drawing.Size(458, 259);
+            this.tbText.Size = new System.Drawing.Size(364, 145);
             this.tbText.TabIndex = 0;
             this.tbText.WatermarkText = "输入要查找的文字";
             this.tbText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbText_KeyDown);
@@ -62,7 +62,7 @@ namespace CW_File_Viewer_5
             this.btnFindNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFindNext.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnFindNext.FocusCuesEnabled = false;
-            this.btnFindNext.Location = new System.Drawing.Point(339, 278);
+            this.btnFindNext.Location = new System.Drawing.Point(245, 164);
             this.btnFindNext.Name = "btnFindNext";
             this.btnFindNext.Size = new System.Drawing.Size(131, 39);
             this.btnFindNext.SymbolSize = 10F;
@@ -78,7 +78,8 @@ namespace CW_File_Viewer_5
             // 
             // 
             this.cbCaseSensitive.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.cbCaseSensitive.Location = new System.Drawing.Point(226, 278);
+            this.cbCaseSensitive.FocusCuesEnabled = false;
+            this.cbCaseSensitive.Location = new System.Drawing.Point(132, 164);
             this.cbCaseSensitive.Name = "cbCaseSensitive";
             this.cbCaseSensitive.Size = new System.Drawing.Size(107, 39);
             this.cbCaseSensitive.TabIndex = 2;
@@ -89,7 +90,7 @@ namespace CW_File_Viewer_5
             this.AcceptButton = this.btnFindNext;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 329);
+            this.ClientSize = new System.Drawing.Size(388, 215);
             this.Controls.Add(this.cbCaseSensitive);
             this.Controls.Add(this.btnFindNext);
             this.Controls.Add(this.tbText);

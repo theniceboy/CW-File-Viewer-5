@@ -523,7 +523,6 @@ namespace CW_File_Viewer_5
                     for (i = 0; i < Gib.ts[Gib.nowsysi].pagen; ++i)
                         if (tabv.Tabs[i].Visible)
                             break;
-                    tabv.SelectedTabIndex = (i + 1) % Gib.ts[Gib.nowsysi].pagen;
                     tabv.SelectedTabIndex = i;
                     tabv.Tabs[i].AttachedControl.Focus();
                     tabv.Tabs[i].AttachedControl.Controls[0].Focus();
@@ -542,6 +541,7 @@ namespace CW_File_Viewer_5
                 }
                 showCheckedTag.Text = "显示已标标签";
                 showCheckedTag.Tag = 1;
+                nowpage = tabv.SelectedTabIndex = 0;
             }
         }
 

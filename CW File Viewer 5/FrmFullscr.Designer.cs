@@ -29,37 +29,14 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmFullscr));
-            this.lrcv = new DevComponents.DotNetBar.Controls.TextBoxX();
             this.fsbig = new DevComponents.DotNetBar.ButtonX();
             this.fssmall = new DevComponents.DotNetBar.ButtonX();
             this.wtsize = new DevComponents.Editors.IntegerInput();
-            this.rtfv = new DevComponents.DotNetBar.Controls.RichTextBoxEx();
             this.metroShell1 = new DevComponents.DotNetBar.Metro.MetroShell();
             this.buttonItem1 = new DevComponents.DotNetBar.ButtonItem();
+            this.lrcv = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.wtsize)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lrcv
-            // 
-            this.lrcv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lrcv.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.lrcv.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lrcv.DisabledBackColor = System.Drawing.Color.White;
-            this.lrcv.Font = new System.Drawing.Font("SimSun", 12F);
-            this.lrcv.ForeColor = System.Drawing.Color.Black;
-            this.lrcv.Location = new System.Drawing.Point(0, 29);
-            this.lrcv.MaxLength = 2147483647;
-            this.lrcv.Multiline = true;
-            this.lrcv.Name = "lrcv";
-            this.lrcv.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.lrcv.Size = new System.Drawing.Size(1033, 491);
-            this.lrcv.TabIndex = 0;
-            this.lrcv.TextChanged += new System.EventHandler(this.lrcv_TextChanged);
             // 
             // fsbig
             // 
@@ -109,26 +86,6 @@
             this.wtsize.Value = 12;
             this.wtsize.ValueChanged += new System.EventHandler(this.wtsize_ValueChanged);
             // 
-            // rtfv
-            // 
-            this.rtfv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtfv.BackColor = System.Drawing.Color.White;
-            // 
-            // 
-            // 
-            this.rtfv.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.rtfv.Font = new System.Drawing.Font("SimSun", 12F);
-            this.rtfv.ForeColor = System.Drawing.Color.Black;
-            this.rtfv.Location = new System.Drawing.Point(0, 29);
-            this.rtfv.Name = "rtfv";
-            this.rtfv.Rtf = "{\\rtf1\\ansi\\ansicpg936\\deff0\\deflang1033\\deflangfe2052{\\fonttbl{\\f0\\fnil\\fcharset" +
-    "134 \\\'cb\\\'ce\\\'cc\\\'e5;}}\r\n\\viewkind4\\uc1\\pard\\lang2052\\f0\\fs24\\par\r\n}\r\n";
-            this.rtfv.Size = new System.Drawing.Size(1033, 491);
-            this.rtfv.TabIndex = 4;
-            this.rtfv.TextChanged += new System.EventHandler(this.rtfv_TextChanged);
-            // 
             // metroShell1
             // 
             this.metroShell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -172,15 +129,27 @@
             this.buttonItem1.Name = "buttonItem1";
             this.buttonItem1.Text = "buttonItem1";
             // 
+            // lrcv
+            // 
+            this.lrcv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lrcv.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.lrcv.Font = new System.Drawing.Font("Times New Roman", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lrcv.Location = new System.Drawing.Point(17, 35);
+            this.lrcv.Name = "lrcv";
+            this.lrcv.Size = new System.Drawing.Size(1000, 480);
+            this.lrcv.TabIndex = 122;
+            this.lrcv.Text = "";
+            // 
             // FrmFullscr
             // 
             this.ClientSize = new System.Drawing.Size(1034, 548);
+            this.Controls.Add(this.lrcv);
             this.Controls.Add(this.metroShell1);
             this.Controls.Add(this.wtsize);
             this.Controls.Add(this.fssmall);
             this.Controls.Add(this.fsbig);
-            this.Controls.Add(this.lrcv);
-            this.Controls.Add(this.rtfv);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmFullscr";
@@ -195,13 +164,12 @@
 
         #endregion
 
-        private DevComponents.DotNetBar.Controls.TextBoxX lrcv;
         private DevComponents.DotNetBar.ButtonX fsbig;
         private DevComponents.DotNetBar.ButtonX fssmall;
         private DevComponents.Editors.IntegerInput wtsize;
-        private DevComponents.DotNetBar.Controls.RichTextBoxEx rtfv;
         private DevComponents.DotNetBar.Metro.MetroShell metroShell1;
         private DevComponents.DotNetBar.ButtonItem buttonItem1;
+        private System.Windows.Forms.RichTextBox lrcv;
 
     }
 }

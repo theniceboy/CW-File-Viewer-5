@@ -676,7 +676,7 @@ namespace CW_File_Viewer_5
             // Load folders are selection changes...
             //if (parent == null || parent.SubItems.Count > 0){
             //    MessageBoxEx.Show("out"); return;}
-            DirectoryInfo dirInfo = null;
+            DirectoryInfo dirInfo;
             if (parent.Tag is DriveInfo)
             {
                 DriveInfo driveInfo = (DriveInfo) parent.Tag;
@@ -691,6 +691,7 @@ namespace CW_File_Viewer_5
                 return;
             }
             parent.SubItems.Clear();
+            parent.FontBold = true;
             DirectoryInfo[] subDirectories = dirInfo.GetDirectories();
             string lsfilename;
             if (nowx > 3 && nowx < l)
@@ -716,7 +717,6 @@ namespace CW_File_Viewer_5
                     if (nowx >= l)
                     {
                         Gib.nowcrst = 1;
-
                         DirectoryInfo[] nodesubdirs = directoryInfo.GetDirectories();
                         foreach (DirectoryInfo nodesubdirinfo in nodesubdirs)
                         {
@@ -727,7 +727,6 @@ namespace CW_File_Viewer_5
                             node.SubItems.Add(subnode);
                         }
                         fpcrumb.SelectedItem = node;
-                        break;
                     }
                     loadin(node);
                 }
